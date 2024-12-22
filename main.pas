@@ -13,9 +13,23 @@ const
   WM_KEYDOWN = $0100;  // KeyDown message
 
 type
-  TInstallHook = procedure; stdcall;
-  TUninstallHook = procedure; stdcall;
-  TGetLastMsg = Procedure( var LastMsg : string ); StdCall;
+  TInstallHook     = procedure; stdcall;
+  TUninstallHook   = procedure; stdcall;
+  TGetLastMsg      = Procedure ( var LastMsg : string ); StdCall;
+  TMainCallBack    = procedure (nCode: Integer; wParam: WPARAM; lParam: LPARAM); stdcall;
+  TSetMainCallBack = Procedure ( MainCallBack : TMainCallBack ); stdcall;
+
+type KBDLLHOOKSTRUCT =
+     record
+        vkCode: DWORD;
+        scanCode: DWORD;
+        flags: DWORD;
+        time: DWORD;
+        dwExtraInfo:
+        ULONG_PTR;
+     end;
+     PKBDLLHOOKSTRUCT = ^KBDLLHOOKSTRUCT;
+
 
   { TForm1 }
   TForm1 = class(TForm)
@@ -43,11 +57,12 @@ type
 
 
 var
-  Form1        : TForm1;
-  DLLHandle    : THandle;
-  InstallHook  : TInstallHook;
-  UninstallHook: TUninstallHook;
-  LastMsg      : TGetLastMsg;
+  Form1           : TForm1;
+  DLLHandle       : THandle;
+  InstallHook     : TInstallHook;
+  UninstallHook   : TUninstallHook;
+  LastMsg         : TGetLastMsg;
+  SetMainCallBack : TSetMainCallBack;
 
 implementation
 
@@ -55,6 +70,20 @@ implementation
 
 { TForm1 }
 
+procedure MainCallBack(nCode: Integer; wParam: WPARAM; lParam: LPARAM); stdcall;
+Var kbStruct : PKBDLLHOOKSTRUCT;
+
+Begin
+  //Form1.ListBox1.Items.Insert(0, IntToStr( nCode ) + ' ' + IntToSTr( wParam )+ ' '+ IntToSTr( Lparam ) );
+
+  if (nCode = HC_ACTION)
+     then begin
+       kbStruct := PKBDLLHOOKSTRUCT(lParam);
+       Form1.ListBox1.Items.Insert(0, IntToStr( kbStruct^.Time )+ ' '+ IntToStr( kbStruct^.VKCode )+ ' '+IntToStr( kbStruct^.ScanCode )+ ' ');
+       // Hier kun je de toetsenbordgebeurtenissen verwerken end;
+  end;
+
+end;
 
 
 procedure TForm1.LoadDLL;
@@ -62,11 +91,15 @@ begin
   DLLHandle := LoadLibrary('KeyboardHookDLL.dll');
   if DLLHandle <> 0 then
   begin
-    InstallHook   := TInstallHook(   GetProcAddress ( DLLHandle, 'InstallHook'  ));
-    UninstallHook := TUninstallHook( GetProcAddress ( DLLHandle, 'UninstallHook'));
-    LastMsg       := TGetLastMsg(       GetProcAddress ( DLLHandle, 'GetLastMsg'      ));
-    if Assigned(InstallHook) and Assigned(UninstallHook) and Assigned(LastMsg) then
+    InstallHook     := TInstallHook    ( GetProcAddress ( DLLHandle, 'InstallHook'     ));
+    UninstallHook   := TUninstallHook  ( GetProcAddress ( DLLHandle, 'UninstallHook'   ));
+    LastMsg         := TGetLastMsg     ( GetProcAddress ( DLLHandle, 'GetLastMsg'      ));
+    SetMainCallBack := TSetMainCallBack( GetProcAddress ( DLLHandle, 'SetMainCallBack' ));
+
+    if Assigned(InstallHook) and Assigned(UninstallHook)   and
+       Assigned(LastMsg)     and Assigned(SetMainCallback) then
     begin
+      SetMainCallBack( @MainCallBack );
       InstallHook;
     end
     else
