@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="D:\Programs\Programming\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1497192888"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -WG -l -vewnhibq -FiD:\LocalData\Programming\Lazarus\KeyBoardHook\lib\i386-win32 -FuD:\Programs\Programming\lazarus\lcl\units\i386-win32\win32 -FuD:\Programs\Programming\lazarus\lcl\units\i386-win32 -FuD:\Programs\Programming\lazarus\components\freetype\lib\i386-win32 -FuD:\Programs\Programming\lazarus\components\lazutils\lib\i386-win32 -FuD:\Programs\Programming\lazarus\packager\units\i386-win32 -FuD:\LocalData\Programming\Lazarus\KeyBoardHook\ -FUD:\LocalData\Programming\Lazarus\KeyBoardHook\lib\i386-win32\ -FED:\LocalData\Programming\Lazarus\KeyBoardHook\ -oD:\LocalData\Programming\Lazarus\KeyBoardHook\KeyboardHook.exe -dLCL -dLCLwin32 KeyboardHook.lpr"/>
+</CONFIG>
