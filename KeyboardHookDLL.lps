@@ -9,9 +9,9 @@
         <Filename Value="KeyboardHookDLL.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="17"/>
-        <CursorPos X="15" Y="27"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="31"/>
+        <CursorPos X="27" Y="41"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -20,15 +20,62 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="56"/>
         <CursorPos X="60" Y="79"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="84"/>
+        <CursorPos X="26" Y="101"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="326"/>
+        <CursorPos X="16" Y="343"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\objpas\objpas.pp"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="13"/>
+        <CursorPos X="11" Y="35"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\ascdef.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="260"/>
+        <CursorPos X="68" Y="277"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\inc\resh.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="10" Y="64"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\sysosh.inc"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="3" Y="22"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="4">
+    <JumpHistory HistoryIndex="26">
       <Position>
         <Filename Value="KeyboardHookDLL.lpr"/>
         <Caret Line="14" Column="28"/>
@@ -42,12 +89,100 @@
         <Caret Line="19" Column="2"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="18" Column="10" TopLine="34"/>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="65" Column="42" TopLine="34"/>
       </Position>
       <Position>
         <Filename Value="KeyboardHookDLL.lpr"/>
-        <Caret Line="65" Column="42" TopLine="34"/>
+        <Caret Line="28" Column="10" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="21" Column="49" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="282" Column="20" TopLine="265"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="89" Column="21" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="21" Column="69" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="153" Column="21" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="89" Column="20" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="21" Column="32" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="41" Column="70" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\inc\resh.inc"/>
+        <Caret Line="64" Column="15" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\inc\resh.inc"/>
+        <Caret Line="91" Column="14" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\inc\resh.inc"/>
+        <Caret Line="64" Column="19" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="41" Column="58" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="21" Column="48" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="282" Column="19" TopLine="265"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="89" Column="20" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="41" Column="27" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\ascdef.inc"/>
+        <Caret Line="277" Column="49" TopLine="260"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="41" Column="27" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\ascdef.inc"/>
+        <Caret Line="277" Column="65" TopLine="260"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="129" Column="17" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\Programs\Programming\lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <Caret Line="101" Column="26" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="KeyboardHookDLL.lpr"/>
+        <Caret Line="41" Column="27" TopLine="31"/>
       </Position>
     </JumpHistory>
     <RunParams>

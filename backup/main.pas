@@ -79,7 +79,7 @@ Begin
   if (nCode = HC_ACTION)
      then begin
        kbStruct := PKBDLLHOOKSTRUCT(lParam);
-       Form1.ListBox1.Items.Insert(0, IntToStr( kbStruct^.Time )+ ' '+ IntToStr( kbStruct^.VKCode )+ ' '+IntToStr( kbStruct^.ScanCode )+ ' '+ );
+       Form1.ListBox1.Items.Insert(0, IntToStr( kbStruct^.Time )+ ' '+ IntToStr( kbStruct^.VKCode )+ ' '+IntToStr( kbStruct^.ScanCode )+ ' ');
        // Hier kun je de toetsenbordgebeurtenissen verwerken end;
   end;
 
